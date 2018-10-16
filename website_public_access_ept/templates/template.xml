@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="clarico_signin_c_signin_ept" inherit_id="clarico_signin.clarico_signin_c_signin">
+		<xpath expr="//div[hasclass('signin_main_div')]" position="attributes">
+			<attribute name="class">signin_main_div login_page_ugg</attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('image_signup_class')]" position="replace">
+		</xpath>
+		<xpath expr="//div[hasclass('back_home_icon_div')]" position="replace">
+		</xpath>
+		<xpath expr="//label[hasclass('c_login_lbl')]" position="replace">
+		</xpath>
+		<xpath expr="//label[hasclass('c_login_lbl')]" position="replace">
+		</xpath>
+		<xpath expr="//input[@name='login']" position="attributes">
+			<attribute name="placeholder">username</attribute>
+		</xpath>
+		<xpath expr="//input[@name='password']" position="attributes">
+			<attribute name="placeholder">password</attribute>
+		</xpath>
+		<xpath expr="//button[hasclass('login_btn_main')]" position="replace">
+			<button type="submit" class="btn login_btn_main common-btn">Sign in</button>
+		</xpath>
+		<xpath expr="//div[hasclass('signin_main_div')]/div[hasclass('login_area_container')]" position="before">
+			<div class="login_logo_div">
+				<p>
+					<span t-field="res_company.logo" t-options="{'widget': 'image'}"
+								t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" />
+				</p>
+			</div>
+			<div class="login_main_heading">
+				<p>HTRADING Online Order System</p>
+			</div>
+		</xpath>
+	</template>
+</odoo>
