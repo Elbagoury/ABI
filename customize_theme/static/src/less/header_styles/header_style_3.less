@@ -245,7 +245,33 @@ margin-left: 2px;
 		float: left;
 		width: 100%;
 	}
-
+	.navbar-nav .open .dropdown-menu.toggel-div-effect
+	{
+		width: 95%;
+	}
+	.first-level-category-caret {
+	    margin-top: 15px !important;
+	}
+	.second-level-category-caret {
+    	margin-top: 0 !important;
+	}
+	.navbar .navbar-top-collapse ul.navbar-right .custom-menu-inside-div
+	{
+		box-shadow: none;
+		border: 0;
+		.mb(16px);
+		.bg(#f6f6f6);
+		
+		.dropdown-menu
+		{
+		.bg(#f6f6f6);
+		}
+	}
+	.navbar-default .navbar-nav > li > a span
+	{
+		color:#444;
+		.size(14px);
+	}
 }
 @media (max-width:800px)
 {
@@ -299,6 +325,7 @@ margin-left: 2px;
 	.main-header-before {
     margin: 5px 0;
 	}
+
 }
 @media (max-width:500px)
 {
@@ -311,19 +338,44 @@ margin-left: 2px;
 		float:left;
 	}
 	.navbar-default .navbar-toggle {
-    border-color: #ddd;
+   	 border-color: #ddd;
 	}
-	
 	.navbar.navbar-static-top
 	{
 		.bg(transparent);
 	}
+	.company_pricelist{
+		padding:1px 7px;
+	}
 	.navbar-default .navbar-nav > li > a span
 	{
 		color:#444;
+	
 	}
-	.company_pricelist{
-		padding:1px 7px;
+	.first-level-category-a, .second-level-a, .third-level-ul li a
+	{
+		.size(13px);
+	}
+	.toggel-div-effect .submenu_expand
+	{
+		.pt(4px);
+	}
+	.sub-menu-ul-heading:last-child {
+    	.pb(0) !important;
+	}
+	.sub-menu-ul-heading, .third-level-li {
+    	.pb(4px);
+	}
+	.third-level-ul li {
+	    padding: 0px;
+	}
+	.navbar .navbar-top-collapse ul.navbar-right .custom-menu-inside-div
+	{
+		box-shadow: none;
+		.bg(#f6f6f6);
+	}
+		.second-level-category-caret {
+    	margin-top: -15px !important;
 	}
 }
 

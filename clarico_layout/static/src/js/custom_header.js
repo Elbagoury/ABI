@@ -274,6 +274,24 @@ $(window).load(function(){
 	$("div.custom-menu-inside-div , ul.custom-menu-inside-div").closest("li").removeClass("active");
 	}
 })
+
+
+
+$(document).ready(function(){ 
+	if ($(window).width() < 1200) {
+	$('#top_menu > li').each(function(){
+	if($(this).find(".dropdown-menu").length > 0)
+		{
+	$(this).find(" > a").append("<i class='fa fa-chevron-right' />")
+	 $(this).on("show.bs.dropdown hide.bs.dropdown", function(){
+			$(this).find("> a > i.fa").toggleClass("fa-chevron-right fa-chevron-down");
+		});
+		}
+	})
+	}
+	
+})
+
 //for searching
 $(document).keyup(function(e) {
 	if (e.which == 27) {
