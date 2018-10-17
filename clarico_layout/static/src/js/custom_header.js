@@ -256,13 +256,23 @@ $(document).ready(function(){
 
 // Show first category by default on load the window
 $(window).load(function(){
+	if ($(window).width() > 1200) {
 	var first_li = $('.first-level-category-li').first('li');
 	first_li.find('.first-level-left-div').addClass('active-li');
-	first_li.find('.toggel_div').find('.menu_1_div').css("display","block");
-	first_li.find('.toggel_div').css("display","block");
-	
+
+	var str =first_li.attr('id');
+	var suffix = str.match(/\d+/).toString();
+
+	$('div.toggel-div-effect').each(function(){
+		var append_div = $(this).attr('id').match(/\d+/).toString();;
+		if(suffix == append_div)
+		{
+			$(this).css("display","block").find(".menu_1_div").css("display","block");
+				
+		}
+	})
 	$("div.custom-menu-inside-div , ul.custom-menu-inside-div").closest("li").removeClass("active");
-	//$("div.custom-menu-inside-div , ul.custom-menu-inside-div").closest("li").find("a:first").removeAttr("data-toggle href");
+	}
 })
 //for searching
 $(document).keyup(function(e) {
