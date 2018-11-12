@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-	<data noupdate="0">
-		<record id="clarico_categories" model="website.menu">
-			<field name="name">Categories</field>
+	<data noupdate="0">		
+		<record id="clarico_diningroom1" model="website.menu">
+			<field name="name">Eprise</field>
+			<!-- <field name="url">/</field> -->
 			<field name="parent_id" ref="website.main_menu" />
-			<field name="dynamic_menu" eval="True"></field>
+			<field name="menu_html">
+				<![CDATA[
+			<div class="custom-menu-inside-maxW">
+	<div class="column-main">
+		<div class="cat-column">
+			<div class="block-cate">
+				<div style="height:40px;"></div>
+				<div class="thumb">
+					<figure>
+						<img class="menu-cate-image" src="/clarico_layout/static/src/img/1.jpg">
+					</figure>
+				</div>
+				<a href="/shop" class="content-cat">
+					<h3 class="title_cat">Chair</h3>
+					<span class="count_cat">
+						( 5 items )            
+					</span>
+				</a>
+				<a href="/shop" class="button button_cat">
+					shop category    
+				</a>
+			</div>
+		</div>
+		<div class="cat-column">
+			<div class="block-cate-down">
+				<a href="/shop" class="content-cat">
+					<h3 class="title_cat">Chair</h3>
+					<span class="count_cat">
+						( 9 items )            
+					</span>
+				</a>
+				<div class="thumb">
+					<figure>
+						<img class="menu-cate-image" src="/clarico_layout/static/src/img/2.jpg">
+					</figure>
+				</div>
+				
+				<a href="/shop" class="button button_cat">
+					shop category    
+				</a>
+			</div>
+		</div>
+		<div class="cat-column">
+			<div class="block-cate">
+				<div style="height:40px;"></div>
+				<div class="thumb">
+					<figure>
+						<img class="menu-cate-image" src="/clarico_layout/static/src/img/3.jpg">
+					</figure>
+				</div>
+				<a href="/shop" class="content-cat">
+					<h3 class="title_cat">Sofas</h3>
+					<span class="count_cat">
+						( 7 items )            
+					</span>
+				</a>
+				<a href="/shop" class="button button_cat">
+					shop category   
+				</a>
+			</div>
+		</div>
+		<div class="cat-column">
+			<div class="block-cate-down">
+				<a href="/shop" class="content-cat">
+					<h3 class="title_cat">Bed</h3>
+					<span class="count_cat">
+						( 6 items )            
+					</span>
+				</a>
+				<div class="thumb">
+					<figure>
+						<img class="menu-cate-image" src="/clarico_layout/static/src/img/4.jpg">
+					</figure>
+				</div>
+				
+				<a href="/shop" class="button button_cat">
+					shop category    
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+			
+				]]>
+			</field>
 			<field name="sequence" type="int">61</field>
 		</record>
-		
-		<record id="clarico_diningroom" model="website.menu">
-			<field name="name">Storage</field>
+
+		<record id="clarico_diningroom2" model="website.menu">
+			<field name="name">ELC</field>
 			<!-- <field name="url">/</field> -->
 			<field name="parent_id" ref="website.main_menu" />
 			<field name="menu_html">
@@ -98,10 +183,10 @@
 				]]>
 			</field>
 			<field name="sequence" type="int">62</field>
-		</record>
-
+		</record>		
+		
 		<record id="clarico_livingroom" model="website.menu">
-			<field name="name">Home Accessories</field>
+			<field name="name">Accessories</field>
 			<field name="parent_id" ref="website.main_menu" />
 			<field name="menu_html">
 				<![CDATA[
