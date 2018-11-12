@@ -14,7 +14,7 @@
     'depends': [
 #            'website',     
             'clarico_attribute_filter',
-         	'clarico_latest_blogs',
+#         	'clarico_latest_blogs',
             'clarico_brand',
             'clarico_category',
             'clarico_category_attribute',
