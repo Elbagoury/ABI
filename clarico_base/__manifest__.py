@@ -8,7 +8,7 @@
 
     # Dependencies
     'depends': [
-        'website_sale','website_blog', 'auth_signup',
+        'website_sale','auth_signup',
     ],
 
     # Views
